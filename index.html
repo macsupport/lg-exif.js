@@ -169,7 +169,16 @@
          <script src="js/exif.min.js"></script>
         <script src="lg-exif.js"></script>
         <script>
-            lightGallery(document.getElementById('lightgallery'));
+            var openLightGallery = function() {
+var lightGallery = $('.lightgallery');
+  lightGallery.lightGallery({
+ mode: 'lg-fade',
+cssEasing : 'cubic-bezier(0.25, 0, 0.25, 1)',
+selector:'.ps'
+}); 
+}
+openLightGallery();
+        
         </script>
     </body>
 </html>
